@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/InfoFragment">
+
+    <fragment
+        android:id="@+id/InfoFragment"
+        android:name="com.example.cse565_proj3.InfoFragment"
+        android:label="Enter Your Info"
+        tools:layout="@layout/fragment_info" >
+
+        <action
+            android:id="@+id/action_InfoFragment_to_RatingFragment"
+            app:destination="@id/RatingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RatingFragment"
+        android:name="com.example.cse565_proj3.RatingFragment"
+        android:label="Rate Your Experience"
+        tools:layout="@layout/fragment_rating" >
+
+        <action
+            android:id="@+id/action_RatingFragment_to_InterestsFragment"
+            app:destination="@id/InterestsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/InterestsFragment"
+        android:name="com.example.cse565_proj3.InterestsFragment"
+        android:label="Tell Us Your Interests"
+        tools:layout="@layout/fragment_interests">
+
+    </fragment>
+</navigation>
